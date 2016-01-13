@@ -2,7 +2,7 @@
 
 Para usar es necesario tener instalado telegram-cli en la carpeta home, para usar:
 
-./revient.sh <NombreDeUsuario> <ArchivoAEnviar> 
+./revient.sh NombreDeUsuario ArchivoAEnviar
 
 
 Colaboradores:
