@@ -6,7 +6,7 @@ Para usar es necesario tener instalado telegram-cli en la carpeta home, para usa
 
 
 Colaboradores:
-Jorge Sánchez Garrido\n
-Rafael Leyva Ruiz\n
-Raul Martin Pineda\n
-Adrian Lara\n
+Jorge Sánchez Garrido
+Rafael Leyva Ruiz
+Raul Martin Pineda
+Adrian Lara
