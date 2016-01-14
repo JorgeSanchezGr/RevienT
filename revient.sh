@@ -10,7 +10,7 @@ if [[ $# == 2 ]]; then
        echo "msg $1 $line"
        echo "$((linea++)) to $1" > log.txt
        sleep 1
-    done < "$2";) | /home/rafa/tg/bin/telegram-cli -W -v -k /home/rafa/tg/tg-server.pub
+    done < "$2";) | ~/tg/bin/telegram-cli -W -v -k ~/tg/tg-server.pub
 elif [[ $# == 3 ]]; then
   linea=$(cat log.txt | cut -d ' ' -f 1)
   echo $linea
