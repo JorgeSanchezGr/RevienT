@@ -3,8 +3,10 @@
 # Para usar, el primer agumento es "nombre_de_usuario" <-- los espacios se reflejan con _ (barra baja),
 # y el segundo argumento es el archivo que queremos enviar
 #como tercer argumento se le puede pasar un archivo log.txt ue indica la linea a partir de la cual enviar el archivo
-
-if [[ $# == 2 ]]; then
+if [[ $1 == '--help' ]]; then
+  echo "Uso: ./revient.sh <peer> <file>\n"
+  echo "Uso: ./revient.sh <peer> <file> log.txt"
+elif [[ $# == 2 ]]; then
   (sleep 1; echo "contact_list"; sleep 1;
     while IFS='' read -r line || [[ -n "$line" ]]; do
        echo "msg $1 $line"
