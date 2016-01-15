@@ -6,6 +6,11 @@
 if [[ $1 == '--help' ]]; then
   echo "Uso: ./revient.sh <peer> <file>\n"
   echo "Uso: ./revient.sh <peer> <file> log.txt"
+  echo "Uso: ./revient.sh --help muestra este mensaje"
+elif [[ $# == 0 ]]; then
+  echo "Uso: ./revient.sh <peer> <file>\n"
+  echo "Uso: ./revient.sh <peer> <file> log.txt"
+  echo "Uso: ./revient.sh --help muestra este mensaje"
 elif [[ $# == 2 ]]; then
   (sleep 1; echo "contact_list"; sleep 1;
     while IFS='' read -r line || [[ -n "$line" ]]; do
