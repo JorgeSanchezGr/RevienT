@@ -8,6 +8,7 @@ if [[ $1 == '--help' ]]; then
   echo "Uso: ./revient.sh <peer> <file> log.txt"
   echo "Uso: ./revient.sh --help muestra este mensaje"
 elif [[ $# == 0 ]]; then
+  echo "muy pocos parametros"
   echo "Uso: ./revient.sh <peer> <file>\n"
   echo "Uso: ./revient.sh <peer> <file> log.txt"
   echo "Uso: ./revient.sh --help muestra este mensaje"
@@ -19,7 +20,7 @@ elif [[ $# == 2 ]]; then
        sleep 1
     done < "$2";) | ~/tg/bin/telegram-cli -W -v -k ~/tg/tg-server.pub
 elif [[ $# == 3 ]]; then
-  linea=$(cat log.txt | cut -d ' ' -f 1)
+  linea=$( $3 | cut -d ' ' -f 1)
   echo $linea
   i=0
   (sleep 1; echo "contact_list"; sleep 1;
