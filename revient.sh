@@ -21,4 +21,4 @@ while IFS='' read -r line || [[ -n "$line" ]]; do
    echo "$linea to $1" > log.txt
    
    sleep 1
-done < "$2";) #| ~/tg/bin/telegram-cli -W -v -k ~/tg/tg-server.pub
+done < "$2";) | ~/tg/bin/telegram-cli -W -v -k ~/tg/tg-server.pub
